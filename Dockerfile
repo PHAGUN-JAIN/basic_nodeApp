@@ -3,7 +3,7 @@ LABEL   Author="PHAGUN-JAIN"
 LABEL   Description="Dockerfile for nodejs"
 ENV     PORT=3000
 WORKDIR /app
-COPY    . .
+COPY    . ./src
 RUN     npm install
 EXPOSE  $PORT
 ENTRYPOINT ["npm", "start"]
